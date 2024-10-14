@@ -31,6 +31,9 @@
 nav a {
   text-decoration: none;
 }
+#bars{
+  display: none;
+}
 body {
   font-family: poopins;
   display: grid;
@@ -632,11 +635,30 @@ footer .copyright {
   font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 430px) {
+  #bars{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 3.5vh;
+    padding: 6px;
+    padding-inline: 10px;
+    font-size: 8vw;
+    color: white;
+  }
+  #bars:hover{
+    background-color: white;
+    color: #000;
+    
+  }
   nav{
     height: 9vh;
+    width: 100vw;
     img{
       height: 8vh;
       top: 1vh;
+    }
+    .search-bar, .signin, .signUp, .shop-cart{
+      display: none;
     }
     p{
       left: 13vw;
@@ -645,9 +667,10 @@ footer .copyright {
     }
     ul{
       flex-direction: column;
-      right: 38vw;
+      right: 0;
       left: auto;
-      top: 7vh;
+      top: 6vh;
+      width: 50vw;
       li{
         background-color: #ffffff;
         border-bottom: 1px solid black;
@@ -657,19 +680,23 @@ footer .copyright {
           background-color:transparent;
           font-weight: 400;
         }
+        
         a{
           font-size: 6vw;
           border-radius: 0px;
           color: #000;
+          width: 40vw;
         }
         a:hover{
-
         }
       }
+      
     }
   }
   .dropdown-content{
     right: 50vw;
   }
-  
+  .dropbtn a:hover {
+    background-color: transparent;
+  }
 }
