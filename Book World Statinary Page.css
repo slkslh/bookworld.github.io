@@ -1,0 +1,86 @@
+main .products{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    top: 4vw;
+    width: 90vw;
+    left: 3vw;
+    gap: 3vw;
+}
+main .products .item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 25vw;
+    background-color: #8a4d38;
+    border-radius: 10px;
+    align-items: center;
+    padding: 1vw;
+    padding-bottom: 2vw;
+    transition: 0.3s;
+}
+main .products .item:hover{
+    background-color: #7a3b25;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+main .products .item img{
+    position: relative;
+    height: 15vw;
+    width: 15vw;
+    margin: 2vw;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+main .products .item .itemName{
+    font-size: x-large;
+    font-weight: 600;
+}
+main .products .item .itemCategory{
+    color: #e0dbdb;
+    margin: -0.2vw;
+}
+main .products .item .itemPrice{
+    font-size: large;
+    font-weight: 600;
+}
+main .products .item button{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    right: 8vw;
+    bottom: .7vw;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.1s ease-in;
+    height:2.5vw;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    background-color: #D09683;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: poppins;
+    border: none;
+    padding: 4px;
+    width: 9vw;
+    margin-bottom: 1vw;
+}
+main .products .item button:hover{
+    background-color: #ffffff;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    color:#000000;
+    font-weight: 600;
+}
+main .products .item .itemName marquee{
+    margin-bottom: -0.5vw;
+    margin-top: -0.1vw;
+}
+footer{
+    top: 8vw;
+}

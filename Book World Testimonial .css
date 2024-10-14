@@ -1,0 +1,167 @@
+main h1{
+    margin-left: 30vw;
+    margin-bottom: -3vw;
+}
+.testimonials{
+    display: flex;
+    position: relative;
+    top: 4vw;
+    left: 5vw;
+    justify-content: space-between;
+    width: 90vw;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #8a4d38;
+    width: 24vw;
+    padding: 2vw;
+    border-radius: 10px;
+    align-items: center;
+    h1{
+        margin-bottom: -1.5vw;
+    }
+}
+.testimonial video{
+    height: 20vw;
+    border-radius: 10px;
+    margin-top: 0.5vw;
+    box-shadow: 1px;
+}
+.testimonial .tCustomerName{
+    font-size: x-large;
+    font-weight: 500;
+}
+.testimonial .reviewText{
+    color: #330000;
+    span{
+        color: black;
+    }
+}
+.testimonial .rating{
+    color: goldenrod;
+    font-size: xx-large;
+    letter-spacing: -5px;
+}
+.rate{
+    position: relative;
+    display: flex;
+    margin-top: -1vw;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.rate input{
+    display: none;
+}
+.rate label{
+    position: relative;
+    font-size: 3vw;
+    color: beige;
+    cursor: pointer;
+    margin: 1vw;
+}
+.rate input:checked ~ label{
+    color: #d68d75;
+    -webkit-text-stroke:2px rgb(235, 217, 171);
+}
+.rate label:hover, .rate label:hover ~ label{
+    color: #d68d75;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+form .heading{
+    margin-top: 2vw;
+    font-weight: 500;
+    font-size: xx-large;
+}
+form .check{
+    position: relative;
+    width: 25vw;
+    margin: 3vw;
+    font-size: 1.5vw;
+    margin-top: -.5vw;
+}
+form .feedback{
+    font-size: 2vw;
+    color: #975a45;
+    font-weight: 600;
+}
+form textarea{
+    margin-top: 1vw;
+    width: 25vw;
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+.check label {
+    display: block;
+    position: relative;
+    left: 0vw;
+    margin-bottom: -2vw;
+    cursor: pointer;
+    padding-left: 35px;
+    font-size: 22px;
+    user-select: none;
+    width: 40vw;
+}
+
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+.check .checkmark {
+    position: absolute;
+    top: .2vw;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #d68d75;
+}
+
+.check label:hover input ~ .checkmark {
+    background-color: #cea598;
+}
+
+
+.check input:checked ~ .checkmark {
+    background-color: #8a4d38;
+}
+
+.check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+footer{
+    margin-top: 8vw;
+}

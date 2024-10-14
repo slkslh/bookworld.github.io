@@ -1,0 +1,634 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+::selection {
+  color: white;
+  background-color: #000000;
+}
+::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-family: poppins;
+}
+::-webkit-scrollbar {
+  width: 1vw;
+  position: relative;
+}
+::-webkit-scrollbar-thumb {
+  width: 1vw;
+  background-color: #d85050;
+  border-radius: 50px;
+  border: 2px solid #000;
+  transition: 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7e0e0e;
+  transition: 0.3s;
+  cursor: default;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+  cursor: default;
+}
+nav a {
+  text-decoration: none;
+}
+body {
+  font-family: poopins;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #330000;
+  overflow-x: hidden;
+}
+main {
+  color: #ffffff;
+  font-family: Poppins;
+  position: relative;
+  top: 4vw;
+  flex: 1;
+  min-height: 57.5vh;
+}
+nav {
+  background-image: radial-gradient(circle, #8b7d7a5e, #8577749d);
+  display: flex;
+  position: fixed;
+  height: 4.5vw;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: -50px;
+  backdrop-filter: blur(25px);
+  z-index: 1000;
+  p {
+    color: #d09683;
+    position: relative;
+    margin-left: 5vw;
+    margin-top: -3.9vw;
+    font-size: x-large;
+    font-weight: 500;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+nav img {
+  position: relative;
+  left: 0;
+  top: 1px;
+  height: 5vw;
+  margin: 1px 1px;
+  transition: 0.3s ease-out;
+}
+nav img:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  width: 35%;
+  position: absolute;
+  left: 15vw;
+  top: 0.75vw;
+  list-style-type: none;
+  align-items: left;
+  justify-content: space-between;
+}
+nav ul li {
+  position: relative;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: poppins;
+  font-size: 1vw;
+  height: 100%;
+  align-items: center;
+  padding: 5px 10px;
+}
+nav ul li .active,
+nav ul li a:hover {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 15px;
+  transition: color, background-color 0.3s;
+}
+nav ul li .active {
+  font-weight: 600;
+  background-color: #d09683;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown a:hover {
+  border-radius: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 1.8vw;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: linear 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  letter-spacing: 1px;
+  transition: linear 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: #000;
+  font-weight: 600;
+}
+
+header .shop-cart {
+  position: absolute;
+  top: 1.2vw;
+  right: 3vw;
+  font-size: 2.2vw;
+  color: #000;
+}
+header .shop-cart img {
+  position: relative;
+  height: 1.87vw;
+  padding: 4px;
+  background-color: #d09683;
+  border: none;
+  border-radius: 15px;
+  transform: scaleX(-1);
+}
+header .shop-cart img:hover {
+  background-color: #ffffff;
+}
+div#blur.\.active {
+  display: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #131313b2, #1f1f1f98);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  filter: blur(50px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: 2s cubic-bezier(0.1, 1, 0.22, 1);
+}
+.search-bar {
+  position: absolute;
+  bottom: 0.7vw;
+  right: 25vw;
+  display: flex;
+  align-items: center;
+  height: 2.5vw;
+  background-color: #d09683;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  width: 3.2vw;
+  border-radius: 50px;
+  transition: all 0.5s;
+  overflow: hidden;
+  height: 2.5vw;
+}
+
+.search-bar input {
+  display: block;
+  font-size: 1.2vw;
+  position: absolute;
+  margin: auto 1vw;
+  height: 1.8vw;
+  margin-left: 3vw;
+  outline: none;
+  font-family: poppins;
+  background-color: transparent;
+  width: 11vw;
+  border: none;
+  color: #303030;
+  margin-top: 0.25vw;
+}
+
+.search-bar a {
+  color: rgb(24, 8, 8);
+  position: absolute;
+  left: 1vw;
+  bottom: 0.55vw;
+  font-size: 1.2vw;
+}
+.search-bar a:hover {
+  color: #5d0707;
+}
+.search-bar:hover {
+  width: 15vw;
+}
+.signUp,
+.signin {
+  position: fixed;
+  right: 8vw;
+  bottom: 0.7vw;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  height: 2.5vw;
+  width: 7vw;
+  z-index: 2000;
+  display: flex;
+  text-decoration: none;
+  background-color: #d09683;
+  justify-content: center;
+  color: #000000;
+  font-size: 1.2vw;
+  font-weight: 500;
+  font-family: poppins;
+  border: none;
+  margin-top: 0.2vw;
+  padding-top: 4px;
+}
+.signin {
+  right: 16vw;
+}
+
+.signUp:hover,
+.signin:hover {
+  background-color: #ffffff;
+  transition: 0.3s ease;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Sign-In-window {
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    rgba(23, 23, 23, 0.567),
+    rgba(13, 13, 13, 0.394)
+  );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  width: 30%;
+  height: auto;
+  border-radius: 5%;
+  padding: 2vw 5vw;
+  margin-top: 10vw;
+  align-items: center;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 32%;
+  padding-bottom: 30px;
+  transform-origin: center;
+  justify-content: center;
+  transition: 01s ease;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #99999965;
+  transform: scaleX(0);
+}
+.Sign-Up-window {
+  display: block;
+  background-image: linear-gradient(to right, #e7e0e044, #91859973);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  width: 30%;
+  height: auto;
+  border-radius: 5%;
+  padding: 2vw 5vw;
+  margin-top: 10vw;
+  align-items: center;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 32%;
+  padding-bottom: 30px;
+  transform-origin: center;
+  justify-content: center;
+  transition: 01s ease;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  border: 2px solid #38373765;
+  transform: scaleX(0);
+}
+.window-heading {
+  z-index: 1;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 4vw;
+  font-family: poppins;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.Sign-Up-window .window-heading {
+  color: #000;
+}
+.Sign-Up-window .form-control {
+  color: #000;
+}
+.Sign-Up-window label {
+  color: #000;
+}
+.Sign-Up-window input {
+  border-color: #000;
+}
+.Sign-Up-window .Sign-Up-line {
+  color: #000;
+  font-weight: 500;
+}
+
+.window-close a {
+  text-decoration: none;
+  background-color: #0000009a;
+  color: #ffffff;
+  font-weight: lighter;
+  max-height: 30px;
+  max-width: 30px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 0px 15px 0px 0px;
+  position: absolute;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  resize: both;
+}
+.window-close a:hover {
+  background-color: #f0f0f069;
+  color: #000000;
+  transition: 0.2s ease;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.container .button-container {
+  font-family: poppins;
+}
+.form-control {
+  width: 28vw;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #d4c8c8;
+  transition: border-color 0.3s, transform 0.3s;
+  background-color: transparent;
+  color: #f8f7f7;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 2.5vh;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.form-control:focus {
+  border-color: #d8d3d3;
+  transition: 0.5s ease;
+}
+label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #e2dfdf;
+  font-family: poppins;
+  transition: all 0.5s ease;
+}
+.form-control:focus + label,
+.form-control:valid + label {
+  top: -20px;
+  left: -2.5px;
+  font-size: 13px;
+  color: #b80808;
+  font-weight: 600;
+}
+.form-container {
+  display: block;
+}
+.Sign-Up-line {
+  font-size: small;
+  color: #b9cae1;
+  font-family: poppins;
+  padding-left: 11px;
+  margin-bottom: -10px;
+}
+.login-button,
+.Sign-Up-button {
+  font-family: poppins;
+  color: #ffffff;
+  background-color: #330000;
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  width: 225px;
+  font-weight: 700;
+  font-size: 21px;
+  padding-bottom: 5px;
+  margin: 10px;
+  letter-spacing: 0.75px;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.Sign-Up-button {
+  background-color: #000000;
+  color: #e4dadada;
+}
+.Sign-Up-button:hover {
+  background-color: #000000c7;
+  color: #fffbfba6;
+  border: 1px solid #d4d2d23f;
+  transition: 0.5s ease;
+}
+.login-button:hover {
+  background-color: #990d0dc7;
+  color: #fffbfba6;
+  border: 1px solid #d4d2d23f;
+  transition: 0.5s ease;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+footer {
+  position: relative;
+  top: 2vw;
+  bottom: -2vw;
+  margin-top: 4vw;
+  margin-bottom: 0;
+  background-image: radial-gradient(circle, #8b7d7a5e, #857774bb);
+  display: flex;
+  height: 18vw;
+  font-family: poppins;
+  backdrop-filter: blur(25px);
+}
+footer img {
+  position: relative;
+  left: -0.1vw;
+  top: -1px;
+  height: 18vw;
+  margin: 1px 1px;
+  transition: 0.3s ease-out;
+}
+footer img:hover {
+  cursor: pointer;
+}
+footer .contact-footer {
+  position: relative;
+  left: 3vw;
+}
+footer h2,
+h3 {
+  color: #ffffff;
+}
+footer .contact-footer ul {
+  position: relative;
+  left: -2.5vw;
+  top: -0.5vw;
+  list-style: none;
+}
+footer .contact-footer ul li {
+  align-content: left;
+}
+footer .contact-footer ul li i {
+  width: 2vw;
+}
+footer .contact-footer ul li a {
+  text-decoration: none;
+  color: #e2dfdf;
+}
+footer .message-footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 7vw;
+  width: 17vw;
+}
+
+footer .message-footer label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -1vw;
+}
+footer .message-footer label input {
+  font-family: poppins;
+  position: relative;
+  margin-top: 0.5vw;
+  top: -0.5vw;
+  left: -0.5vw;
+  outline: none;
+  font-weight: 500;
+  border-radius: 3px;
+  border: none;
+  padding: 2px 4px;
+}
+footer .message-footer label textarea {
+  font-family: poppins;
+  position: relative;
+  margin-top: 0.5vw;
+  top: -0.4vw;
+  left: -0.5vw;
+  outline: none;
+  font-weight: 500;
+  border-radius: 3px;
+  border: none;
+  padding: 2px 4px;
+  resize: none;
+}
+footer button {
+  position: relative;
+  justify-items: center;
+  justify-content: center;
+  bottom: 0.7vw;
+  left: 10vw;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.1s ease-in;
+  background-color: #b9cae1;
+  height: 2.5vw;
+  width: 7vw;
+  justify-content: center;
+  z-index: 2000;
+  display: flex;
+  text-decoration: none;
+  background-color: #d09683;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.2vw;
+  font-weight: 500;
+  font-family: poppins;
+  border: none;
+  margin-top: 0.2vw;
+  padding-top: 4px;
+}
+footer .subscribe-footer button {
+  left: 14vw;
+  width: 9vw;
+}
+
+footer button:hover {
+  background-color: #ffffff;
+  transition: 0.3s ease;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .subscribe-footer {
+  position: relative;
+  left: 15vw;
+}
+footer .subscribe-footer div {
+  position: relative;
+  top: -2vw;
+}
+footer .subscribe-footer div ul {
+  position: relative;
+  top: -1.5vw;
+  list-style: none;
+}
+footer .subscribe-footer div ul li i {
+  width: 1.5vw;
+}
+footer .subscribe-footer div ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .contact-footer a:hover,
+footer .subscribe-footer div a:hover {
+  color: #330000;
+}
+footer .copyright {
+  position: absolute;
+  bottom: 0;
+  left: 40vw;
+  color: #ffffffb7;
+  font-family: Arial, Helvetica, sans-serif;
+}

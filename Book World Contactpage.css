@@ -1,0 +1,177 @@
+
+main{
+    display: flex;
+}
+form{
+    position: relative;
+    top: 0;
+    left: 5vw;
+    width: 20vw;
+}
+form h1{
+    margin-bottom: -0.5vw;
+}
+form label{
+    position: relative;
+    margin-top: 0.7vw;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+form label input, form label textarea{
+    width: 20vw;
+    padding: 4px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #ecbdae;
+    font-family: poppins;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+form label textarea{
+    height: max-content;
+    resize: none;
+
+    margin-bottom: -2vw;
+}
+form button{
+    position: relative;
+    top: 2vw;
+    left: 13vw;
+    bottom: 0.7vw;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.1s ease-in;
+    height: 2.5vw;
+    width: 7vw;
+    display: flex;
+    background-color: #D09683;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: poppins;
+    border: none;
+    padding-top: 4px;
+}
+form button:hover {
+    background-color: #ffffff;
+    transition: 0.3s ease;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+footer{
+    position: relative;
+    margin-top: 6vw;
+    top: 6vw;
+}
+.customer-type{
+    margin-left: -1vw;
+    display: flex;
+    flex-direction: column;
+}
+.customer-type label{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 20vw;
+    height: 1.5vw;
+}
+.customer-type input{
+    height: 1.5vw;
+    width: 1.5vw;
+    margin-right: 1vw;
+    opacity: 0;
+    cursor: pointer;
+}
+.customer-type .checkmark{
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background-color: #D09683;
+    border:3px solid #D09683;
+    border-radius: 5px;
+    display: inline-block;
+    left: -2.5vw;
+    cursor: pointer;
+}
+.customer-type .checkmark:hover{
+    background-color: #ffffff46;
+}
+.customer-type input:checked ~ .checkmark{
+    background-color: #330000;
+}
+.customer-radio{
+    margin-left: -1.5vw;
+}
+.opening-hours{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:0vw;
+    width: 25vw;
+    height: min-content;
+    align-items: center;
+    h1{
+        margin-left: -3vw;
+    }
+}
+.opening-hours ul{
+    list-style: none;
+    margin-top: -2vw;
+    
+}
+.opening-hours ul li {
+    font-size: 2.2vw;
+    font-weight: 500;
+    margin-top: 1vw;
+    color: #D09683;
+}
+.opening-hours ul li div{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vw;
+    color: #ecbdae;
+}
+.contact {
+    position: relative;
+    left: -22vw;
+    top: 24vw;
+    width: 25vw;
+}
+.contact{
+     h1{
+        margin-bottom: 2vw;
+     }
+     ul{
+        list-style: none;
+        margin-left: -2.8vw;
+        margin-top: -2vw;
+     }
+     li a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5vw;
+     }
+     li a:hover{
+        color: #ecbdae;
+     }
+     li a i{
+        width: 2vw;
+     }
+}
+main iframe{
+    margin-left: -18.5vw;
+}
+.location{
+    margin-left: -1.5vw;
+    margin-right: -1.5vw;
+    h1{
+        margin-left: -19vw;
+    }
+}
