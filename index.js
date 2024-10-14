@@ -47,3 +47,12 @@ function categoryOpen(){
 function categoryClose(){
   category.style.display = "none";
 }
+document.getElementById('scrollButton').addEventListener('click', function() {
+  const target = document.getElementById('target');
+  const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+  const offset = targetPosition - (window.innerHeight * 0.09);
+  window.scrollTo({
+      top: offset,
+      behavior: 'smooth'
+  });
+});
