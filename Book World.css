@@ -122,7 +122,6 @@ nav ul li .active {
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 .dropdown a:hover {
   border-radius: 0;
@@ -160,7 +159,6 @@ nav ul li .active {
   color: #000;
   font-weight: 600;
 }
-
 header .shop-cart {
   position: absolute;
   top: 1.2vw;
@@ -639,7 +637,7 @@ footer .copyright {
     display: block;
     position: fixed;
     right: 0;
-    top: 3.5vh;
+    top: 3vh;
     padding: 6px;
     padding-inline: 10px;
     font-size: 8vw;
@@ -666,6 +664,7 @@ footer .copyright {
       font-size: 3vh;
     }
     ul{
+      display: none;
       flex-direction: column;
       right: 0;
       left: auto;
@@ -688,6 +687,7 @@ footer .copyright {
           width: 40vw;
         }
         a:hover{
+          background-color: transparent;
         }
       }
       
@@ -699,4 +699,17 @@ footer .copyright {
   .dropbtn a:hover {
     background-color: transparent;
   }
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+  #bars:hover + ul{
+    display: block;
+  }
+  .dropbtn span{
+    color: white;
+  }
+  ul:hover{
+    display: block;
+  }
+  
 }
