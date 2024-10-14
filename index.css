@@ -19,10 +19,11 @@
         width: 30vw;
         -webkit-text-stroke: 0.5px #ffffff;
         text-align: center;
+        margin-left: 10vw;
     }
     button{
         height: 3vw;
-        width: 10vw;
+        width: 15vw;
         background-color: transparent;
         border:3px solid #ffffff;
         color: #ffe7e7;
