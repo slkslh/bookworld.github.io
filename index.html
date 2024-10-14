@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Information Form</title>
+        <style>
+            .rounded-border {
+            border: 1px solid black;
+            border-radius: 0px;
+            margin: auto;
+            width: 700px;
+            height: 980px;
+            }
+        </style>
+</head>
+<body>
+    <div class="rounded-border">
+    <form name="myform" action=" " method="">
+            <table cellpadding="6" cellspacing="5" align="center">
+            <!--Account Information-->
+                <tr>
+                    <td><td><h3>Account Information</td></td>
+                </tr>
+                <tr>
+                    <td><b>Login Name*</b></td> 
+                    <td><input type="text" name="loginName" size="10" required></td>
+                </tr>
+                <tr> 
+                    <td><b>Password*</b></td> 
+                    <td><input type="password" name="password" size="10" required></td>
+                </tr>
+                <tr> 
+                    
+                    <td><b>Confirm  Password*</b></td> 
+                    <td><input type="password" name="confirmPassword" size="10" required></td>
+                </tr>
+                <tr> 
+                    <td><b>Email Address</b></td> 
+                    <td><input type="email" name="email" size=""></td>
+                </tr>
+                <tr> 
+                    <td><b>Confirm Email</b></td> 
+                    <td><input type="email" name="confirmEmail" size=""></td>
+                </tr>
+
+            <!--Contact Information-->
+                <tr>
+                    <td><td><h3>Contact Information</td></td>
+                </tr>
+                <tr> 
+                    <td><b>First Name*</b></td> 
+                    <td><input type="text" name="firstName" size="10" required></td>
+                </tr>
+                <tr> 
+                    <td><b>Last Name*</b></td> 
+                    <td><input type="text" name="lastName" size="10" required></td>
+                </tr>
+                <tr> 
+                    <td><b>Address 1*</b></td> 
+                    <td><input type="text" name="address1" size="" required></td>
+                </tr>
+                <tr> 
+                    <td><b>Address 2</b></td> 
+                    <td><input type="text" name="address2" size=""></td>
+                </tr>
+                <tr> 
+                    <td><b>City</b></td> 
+                    <td><input type="text" name="city" size=""></td>
+                </tr>
+                <tr>
+                    <td><b>State or Province*</b></td> 
+                    <td>
+                        <select name="province" size="1" required>
+                            <option value="" selected>Select---</option>
+                            <option value="northern">Northern Province</option>
+                            <option value="north-western">North Western Province</option>
+                            <option value="north-central">North Central Province</option>
+                            <option value="central">Central Province</option>
+                            <option value="eastern">Eastern Province</option>
+                            <option value="sabaragamuwa">Sabaragamuwa Province</option>
+                            <option value="southern">Southern Province</option>
+                            <option value="uva">Uva Province</option>
+                            <option value="western">Western Province</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Zip*</b></td>
+                    <td><input type="text" name="city" size="10"></td>  
+                </tr>
+                <tr>
+                    <td><b>Country*</b></td>
+                    <td><input type="text" name="city" size="10"></td>
+                </tr>
+                <tr>
+                    <td><b>Gender*</b></td>
+                    <td>
+                        <input type="radio" name="gender" value="female">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" value="female">
+                        <label for="gender">Female</label>
+                    </td>
+                </tr>
+                
+            <!--Misc.Information-->
+                <tr>
+                    <td><td><h3>Misc.Information</td></td>
+                </tr>
+                <tr>
+                    <td><b>Annual Household Income</b></td>
+                    <td>
+                        <select id="income" name="income">
+                            <option value="">Select---</option>
+                            <option value="less_than_50k">Less than $50,000</option>
+                            <option value="50k_to_100k">$50,000 to $100,000</option>
+                            <option value="more_than_100k">More than $100,000</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Interests</b></td>
+                    <td>
+                        <input type="checkbox" name="interests" value="music">
+                        <label for="">Shopping Fashion</label>
+                        <input type="checkbox" name="interests" value="sports">
+                        <label for="">Sports</label>
+                        <input type="checkbox" name="interests" value="travel">
+                        <label for="">Travel</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Eye Color</b></td>
+                    <td>
+                        <input type="checkbox"name="EyeColor" value="red">
+                        <label for="">Red</label>
+                        <input type="checkbox" name="EyeColor" value="green">
+                        <label for="">Green</label>
+                        <input type="checkbox" name="EyeColor" value="brown">
+                        <label for="">Brown</label>
+                        <input type="checkbox" name="EyeColor" value="bluegold">
+                        <label for="">Blue Gold</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+    </form>
+</div>
+</div>
+</body>
+</html>
