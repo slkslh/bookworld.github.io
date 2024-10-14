@@ -476,6 +476,9 @@ label {
   padding-left: 20%;
   padding-right: 20%;
 }
+.buttons2{
+  display: none;
+}
 footer {
   position: relative;
   top: 2vw;
@@ -637,7 +640,7 @@ footer .copyright {
     display: block;
     position: fixed;
     right: 0;
-    top: 3vh;
+    top: 2vh;
     padding: 6px;
     padding-inline: 10px;
     font-size: 8vw;
@@ -655,7 +658,7 @@ footer .copyright {
       height: 8vh;
       top: 1vh;
     }
-    .search-bar, .signin, .signUp, .shop-cart{
+    .search-bar, .shop-cart{
       display: none;
     }
     p{
@@ -668,7 +671,7 @@ footer .copyright {
       flex-direction: column;
       right: 0;
       left: auto;
-      top: 6vh;
+      top: 5vh;
       width: 50vw;
       li{
         background-color: #ffffff;
@@ -711,5 +714,85 @@ footer .copyright {
   ul:hover{
     display: block;
   }
-  
+  footer{
+    
+    button{
+      height: 4vh;
+      width: 25vw;
+      font-size: 2.5vh;
+      padding: 1px;
+    }
+    img{
+      display: none;
+    }
+    flex-direction: column;
+    .message-footer{
+      width: 80vw;
+      left: 0;
+      margin-left: 0vw;
+      label{
+        left: 10vw;
+        margin-bottom: 2vh;
+        input, textarea{
+          height: 4vh;
+          font-size: 2vh;
+        }
+        textarea{
+          height: 7vh;
+        }
+      }
+    }
+    h1,h2,h3{
+      font-size: 7vw;
+      width: 100vw;
+      text-align: center;
+      margin-block: 2vh;
+    }
+    .contact-footer{
+      left: 0vw;
+      ul {
+        left: 5vw;
+        font-size: 2vh;
+        li {
+          i{
+        width: 8vw;
+          }
+      }
+    }
+    }
+    .subscribe-footer{
+      left: 0vw;
+      margin-bottom: 3vh;
+      button{
+        width: 35vw;
+        left: 10vw;
+      }
+      div ul{
+        left: 5vw;
+        font-size: 2vh;
+       li {
+        i{
+        width: 8vw;
+      }
+    }
+    }
+    }
+    .copyright{
+      text-align: center;
+      left: 0;
+      width: 100vw;
+    }
+  }
+  .buttons{
+    display: none;
+  }
+  .buttons2 .signin, .buttons2 .signUp{
+    display: block;
+    position: relative;
+    top: 10vh;
+    height: 5vh;
+    width: 12vh;
+    font-size: 2vh;
+    padding-top: 6px;
+  }
 }
