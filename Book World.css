@@ -631,3 +631,45 @@ footer .copyright {
   color: #ffffffb7;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media (max-width: 430px) {
+  nav{
+    height: 9vh;
+    img{
+      height: 8vh;
+      top: 1vh;
+    }
+    p{
+      left: 13vw;
+      top: -4vh;
+      font-size: 3vh;
+    }
+    ul{
+      flex-direction: column;
+      right: 38vw;
+      left: auto;
+      top: 7vh;
+      li{
+        background-color: #ffffff;
+        border-bottom: 1px solid black;
+        height: 6vh;
+        
+        .active{
+          background-color:transparent;
+          font-weight: 400;
+        }
+        a{
+          font-size: 6vw;
+          border-radius: 0px;
+          color: #000;
+        }
+        a:hover{
+
+        }
+      }
+    }
+  }
+  .dropdown-content{
+    right: 50vw;
+  }
+  
+}
