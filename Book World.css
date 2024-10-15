@@ -31,7 +31,7 @@
 nav a {
   text-decoration: none;
 }
-#bars{
+#bars {
   display: none;
 }
 body {
@@ -476,7 +476,7 @@ label {
   padding-left: 20%;
   padding-right: 20%;
 }
-.buttons2{
+.buttons2 {
   display: none;
 }
 footer {
@@ -636,7 +636,7 @@ footer .copyright {
   font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 430px) {
-  #bars{
+  #bars {
     display: block;
     position: fixed;
     right: 0;
@@ -646,57 +646,56 @@ footer .copyright {
     font-size: 8vw;
     color: white;
   }
-  #bars:hover{
+  #bars:hover {
     background-color: white;
     color: #000;
-    
   }
-  nav{
+  nav {
     height: 9vh;
     width: 100vw;
-    img{
+    img {
       height: 8vh;
       top: 1vh;
     }
-    .search-bar, .shop-cart{
+    .search-bar,
+    .shop-cart {
       display: none;
     }
-    p{
+    p {
       left: 13vw;
       top: -4vh;
       font-size: 3vh;
     }
-    ul{
+    ul {
       display: none;
       flex-direction: column;
       right: 0;
       left: auto;
       top: 5vh;
       width: 50vw;
-      li{
+      li {
         background-color: #ffffff;
         border-bottom: 1px solid black;
         height: 6vh;
-        
-        .active{
-          background-color:transparent;
+
+        .active {
+          background-color: transparent;
           font-weight: 400;
         }
-        
-        a{
+
+        a {
           font-size: 6vw;
           border-radius: 0px;
           color: #000;
           width: 40vw;
         }
-        a:hover{
+        a:hover {
           background-color: transparent;
         }
       }
-      
     }
   }
-  .dropdown-content{
+  .dropdown-content {
     right: 50vw;
   }
   .dropbtn a:hover {
@@ -705,94 +704,98 @@ footer .copyright {
   .dropdown:hover .dropbtn {
     background-color: transparent;
   }
-  #bars:hover + ul{
+  #bars:hover + ul {
     display: block;
   }
-  .dropbtn span{
+  .dropbtn span {
     color: white;
   }
-  ul:hover{
+  ul:hover {
     display: block;
   }
-  footer{
-    
-    button{
+  footer {
+    button {
       height: 4vh;
       width: 25vw;
       font-size: 2.5vh;
       padding: 1px;
     }
-    img{
+    img {
       display: none;
     }
     flex-direction: column;
-    .message-footer{
+    .message-footer {
       width: 80vw;
       left: 0;
       margin-left: 0vw;
-      label{
+      label {
         left: 10vw;
         margin-bottom: 2vh;
-        input, textarea{
+        input,
+        textarea {
           height: 4vh;
           font-size: 2vh;
         }
-        textarea{
+        textarea {
           height: 7vh;
         }
       }
     }
-    h1,h2,h3{
+    h1,
+    h2,
+    h3 {
       font-size: 7vw;
       width: 100vw;
       text-align: center;
       margin-block: 2vh;
     }
-    .contact-footer{
+    .contact-footer {
       left: 0vw;
       ul {
         left: 5vw;
         font-size: 2vh;
         li {
-          i{
-        width: 8vw;
+          i {
+            width: 8vw;
           }
+        }
       }
     }
-    }
-    .subscribe-footer{
+    .subscribe-footer {
       left: 0vw;
       margin-bottom: 3vh;
-      button{
+      button {
         width: 35vw;
         left: 10vw;
       }
-      div ul{
+      div ul {
         left: 5vw;
         font-size: 2vh;
-       li {
-        i{
-        width: 8vw;
+        li {
+          i {
+            width: 8vw;
+          }
+        }
       }
     }
-    }
-    }
-    .copyright{
+    .copyright {
       text-align: center;
       left: 0;
       width: 100vw;
     }
   }
-  .buttons{
+  .buttons {
     display: none;
   }
-  .buttons2 .signin, .buttons2 .signUp{
-    display: block;
-    position: relative;
-    top: 10vh;
-    height: 5vh;
-    width: 12vh;
-    font-size: 2vh;
-    padding-top: 6px;
+  .Sign-In-window ,.Sign-Up-window{
+    top: 20vh;
+    width: 80vw;
+    left: 5vw;
+    .window-heading {
+      font-size: 4vh;
+    }
+    input {
+      width: 75vw;
+    }
   }
 }
